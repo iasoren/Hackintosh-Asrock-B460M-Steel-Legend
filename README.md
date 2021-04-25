@@ -8,30 +8,27 @@ GPU: AMD Radeon™ RX 580 8GB
 SSD: Sabrent RocketQ NVME
 WiFi/BT: BCM94352Z
 ```
+OpenCore 0.6.3
 
-# Guide Hackintosh + OpenCore
-- https://dortania.github.io/OpenCore-Desktop-Guide
-
-OpenCore 0.
-
-# What Works:
-
-Software:
+# What Works - Software:
+- Metal (fully)
+- iServices
+- Sleep and Wake (mostly)
+- DRM (broken in Big Sur)
+- Bootpicker (verbose off)
 - Continuity:
     - Handoff
-    - iMessage
     - Air Drop
-- Sleep
-- Wake
-- Audio (select internal speakers)
-- Ethernet
-- Bluetooth
-- WiFi
-- All USB ports (Full 3.0 + 2.0 + type C)
+    - SideCar
+- Big Sur 11.2.3
 
-Hardware:
+# What Works - Hardware:
+- Ethernet Dragon 2.5G
+- Sound (headphones and rear sound tested)
+- WiFi and BT (BCM94352Z)
+- CPU/GPU identified correctly in System Properties
+- Hardware Acceleration (with UHD 630 set as frameless)
 
-
-
-Note: Realtek 8125 Ethernet card required to manually set to 100baseTx to work
-![Realtek 8125 Ethernet](/images/net.png)
+# What Doesn't Work Yet:
+- Technically it all works
+- Dragon 2.5G requires being manually set to 1000baseTx with full duplex to work
